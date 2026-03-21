@@ -142,49 +142,6 @@ CSV file should contain:
 
 ---
 
-## 📸 Project Screenshots
-
-### 🔹 Dashboard Overview
-<p align="center">
-  <img width="1847" height="795" alt="Screenshot 2026-03-21 192841" src="https://github.com/user-attachments/assets/8fddf2a7-8e7a-41e0-8bc1-7b4d8a3321d8" />
-
-</p>
-
-### 🔹 Forecast Metrics
-<p align="center">
-  <img width="1721" height="805" alt="Screenshot 2026-03-21 192917" src="https://github.com/user-attachments/assets/943177ba-2f2c-42d6-a8f4-3bdff82817bf" />
-
-</p>
-
-### 🔹 Sales Forecast Trend
-<p align="center">
- <img width="1721" height="805" alt="Screenshot 2026-03-21 192917" src="https://github.com/user-attachments/assets/8a4e8c31-609a-42eb-9320-b04f35fa81fb" />
-
-</p>
-
-### 🔹 Animated Chart View
-<p align="center">
-  <img width="1762" height="756" alt="Screenshot 2026-03-21 192931" src="https://github.com/user-attachments/assets/f54e3427-10d9-4399-bd58-80a4f303e5d7" />
-
-</p>
-
-### 🔹 Distribution Analysis
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8d0617ca-2cc6-4465-b113-cbf0538de7f6" width="800"/>
-</p>
-
-### 🔹 Data Table View
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/38ec0f07-84fe-437d-b5d4-324694d6fa01" width="800"/>
-</p>
-
-### 🔹 Download Feature
-<p align="center">
-  <img width="1734" height="683" alt="Screenshot 2026-03-21 193023" src="https://github.com/user-attachments/assets/6806bcce-ec91-4f60-82d7-42950a9593f6" />
-
-</p>
----
-
 ## 🔮 Future Improvements
 
 - Prophet model integration  
