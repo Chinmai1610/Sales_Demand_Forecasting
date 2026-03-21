@@ -146,22 +146,26 @@ CSV file should contain:
 
 ### 🔹 Dashboard Overview
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/24f52410-a9bb-4d89-a236-5a1e75895b2b" width="800"/>
+  <img width="1847" height="795" alt="Screenshot 2026-03-21 192841" src="https://github.com/user-attachments/assets/8fddf2a7-8e7a-41e0-8bc1-7b4d8a3321d8" />
+
 </p>
 
 ### 🔹 Forecast Metrics
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/91bed534-3c21-40fd-bc72-5165c7be940b" width="800"/>
+  <img width="1721" height="805" alt="Screenshot 2026-03-21 192917" src="https://github.com/user-attachments/assets/943177ba-2f2c-42d6-a8f4-3bdff82817bf" />
+
 </p>
 
 ### 🔹 Sales Forecast Trend
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f005bd9d-6527-4ceb-abc5-19ffe65828ce" width="800"/>
+ <img width="1721" height="805" alt="Screenshot 2026-03-21 192917" src="https://github.com/user-attachments/assets/8a4e8c31-609a-42eb-9320-b04f35fa81fb" />
+
 </p>
 
 ### 🔹 Animated Chart View
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cfb2d437-11cf-486f-b53f-12a6c0eec43e" width="800"/>
+  <img width="1762" height="756" alt="Screenshot 2026-03-21 192931" src="https://github.com/user-attachments/assets/f54e3427-10d9-4399-bd58-80a4f303e5d7" />
+
 </p>
 
 ### 🔹 Distribution Analysis
@@ -176,7 +180,8 @@ CSV file should contain:
 
 ### 🔹 Download Feature
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6194a670-d856-4f59-a602-582e5e2190ad" width="800"/>
+  <img width="1734" height="683" alt="Screenshot 2026-03-21 193023" src="https://github.com/user-attachments/assets/6806bcce-ec91-4f60-82d7-42950a9593f6" />
+
 </p>
 ---
 
