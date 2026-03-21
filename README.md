@@ -142,22 +142,42 @@ CSV file should contain:
 
 ---
 
-## 📸 Dashboard Preview
+## 📸 Project Screenshots
 
-<img width="1847" height="795" alt="Screenshot 2026-03-21 192841" src="https://github.com/user-attachments/assets/24f52410-a9bb-4d89-a236-5a1e75895b2b" />
+### 🔹 Dashboard Overview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/24f52410-a9bb-4d89-a236-5a1e75895b2b" width="800"/>
+</p>
 
-<img width="1797" height="787" alt="Screenshot 2026-03-21 192901" src="https://github.com/user-attachments/assets/91bed534-3c21-40fd-bc72-5165c7be940b" />
+### 🔹 Forecast Metrics
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/91bed534-3c21-40fd-bc72-5165c7be940b" width="800"/>
+</p>
 
-<img width="1721" height="805" alt="Screenshot 2026-03-21 192917" src="https://github.com/user-attachments/assets/f005bd9d-6527-4ceb-abc5-19ffe65828ce" />
+### 🔹 Sales Forecast Trend
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f005bd9d-6527-4ceb-abc5-19ffe65828ce" width="800"/>
+</p>
 
-<img width="1762" height="756" alt="Screenshot 2026-03-21 192931" src="https://github.com/user-attachments/assets/cfb2d437-11cf-486f-b53f-12a6c0eec43e" />
+### 🔹 Animated Chart View
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cfb2d437-11cf-486f-b53f-12a6c0eec43e" width="800"/>
+</p>
 
-<img width="1716" height="775" alt="Screenshot 2026-03-21 192946" src="https://github.com/user-attachments/assets/8d0617ca-2cc6-4465-b113-cbf0538de7f6" />
+### 🔹 Distribution Analysis
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8d0617ca-2cc6-4465-b113-cbf0538de7f6" width="800"/>
+</p>
 
-<img width="1831" height="858" alt="Screenshot 2026-03-21 193005" src="https://github.com/user-attachments/assets/38ec0f07-84fe-437d-b5d4-324694d6fa01" />
+### 🔹 Data Table View
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/38ec0f07-84fe-437d-b5d4-324694d6fa01" width="800"/>
+</p>
 
-<img width="1734" height="683" alt="Screenshot 2026-03-21 193023" src="https://github.com/user-attachments/assets/6194a670-d856-4f59-a602-582e5e2190ad" />
-
+### 🔹 Download Feature
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6194a670-d856-4f59-a602-582e5e2190ad" width="800"/>
+</p>
 ---
 
 ## 🔮 Future Improvements
