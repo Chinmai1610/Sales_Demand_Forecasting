@@ -37,22 +37,6 @@ It applies **time-series analysis** techniques and provides **business-friendly 
 - Plotly  
 - Streamlit
 
-## Screenshots
-<img width="1847" height="795" alt="Screenshot 2026-03-21 192841" src="https://github.com/user-attachments/assets/5c8a669f-6b06-47dc-ae74-adcb9d4cc10e" />
-
-<img width="1847" height="795" alt="Screenshot 2026-03-21 192841" src="https://github.com/user-attachments/assets/a6d9c505-86d0-44fc-b060-080c33d7c4af" />
-
-<img width="1721" height="805" alt="Screenshot 2026-03-21 192917" src="https://github.com/user-attachments/assets/cfc10196-6c35-404a-a6f1-3d6d1491edb0" />
-
-<img width="1762" height="756" alt="Screenshot 2026-03-21 192931" src="https://github.com/user-attachments/assets/6a2196a1-2636-44fe-ba76-4822e632b2e3" />
-
-<img width="1716" height="775" alt="Screenshot 2026-03-21 192946" src="https://github.com/user-attachments/assets/820e39c3-679f-45f0-8c5c-72c3ae440b10" />
-
-<img width="1831" height="858" alt="Screenshot 2026-03-21 193005" src="https://github.com/user-attachments/assets/d76dfb0e-b59e-4c4e-893b-459e557d410e" />
-
-<img width="1734" height="683" alt="Screenshot 2026-03-21 193023" src="https://github.com/user-attachments/assets/de9b9c90-c28f-4804-92c9-9dc230bf42f2" />
-
-
 ---
 
 ## 📂 Project Structure
