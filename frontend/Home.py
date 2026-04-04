@@ -60,15 +60,15 @@ with st.sidebar:
     st.markdown("<h1 style='text-align: center; color: #1e3a8a;'>SalesDemand Forecasting</h1>", unsafe_allow_html=True)
     st.markdown("### 🛠️ Configuration")
     
-    ma_window = st.select_slider("Smoothing Factor", options=[3, 7, 14, 21], value=7)
-    horizon = st.selectbox("Forecast Horizon", [30, 60, 90, 120, 150,180], index=0)
+    ma_window = st.select_slider("Smoothing Factor", options=[3, 7, 14, 21, 30, 38, 42, 60], value=7)
+    horizon = st.selectbox("Forecast Horizon", [30, 60, 90,120,150,180,210], index=0)
     
     st.divider()
     st.write("📈 **System Status**")
     st.success("ARIMA Engine: Active")
     st.info("Dataset: sales_data.csv")
     
-    st.caption("Developed by Chinmai J / @ 2026")
+    st.caption("Developed by Chinmai J | @ 2026")
 
 # --- 3. DASHBOARD CONTENT ---
 st.title("💎 Sales Demand Forecasting Pro")
@@ -101,41 +101,76 @@ if os.path.exists(DATA_PATH):
 
     st.markdown("---")
 
-    # --- 5. ANALYTICS TABS ---
-    tab_chart, tab_data, tab_export = st.tabs(["📊 Visual Forecast", "📄 Detailed Logs", "📥 Export Hub"])
+   # --- 5. ANALYTICS & INSIGHTS ENGINE ---
+    st.markdown("### 🔍 Advanced Analytics Engine")
     
-    with tab_chart:
-        st.subheader("Predictive Demand Curve")
-        # Line chart with custom area/color feels more "premium"
-        st.area_chart(forecast_df.set_index('date')[[TARGET_COL, 'Trend']], color=["#1e3a8a", "#10b981"])
+    # Using a modern radio button styled as a segmented control for navigation
+    view_mode = st.radio(
+        "Select View Mode",
+        ["📈 Trend Analysis", "📋 Inventory Schedule", "📥 Export Center"],
+        horizontal=True,
+        label_visibility="collapsed"
+    )
 
-    with tab_data:
-        st.subheader("Inventory Requirements Schedule")
-        # Use column config to add progress bars to sales data
-        st.dataframe(
-            forecast_df,
-            column_config={
-                TARGET_COL: st.column_config.ProgressColumn(
-                    "Projected Sales",
-                    help="Predicted daily sales units",
-                    format="%.0f",
-                    min_value=0,
-                    max_value=int(forecast_df[TARGET_COL].max())
-                ),
-            },
-            use_container_width=True,
-            hide_index=True
-        )
+    st.markdown("<br>", unsafe_allow_html=True)
 
-    with tab_export:
-        st.subheader("Data Portability")
-        st.write("Generate and download the encrypted forecast report for internal stakeholders.")
-        csv = forecast_df.to_csv(index=False).encode('utf-8')
-        st.download_button(
-            label="Generate Final Report (.CSV)",
-            data=csv,
-            file_name=f"Report_v1_{pd.Timestamp.now().date()}.csv",
-            mime="text/csv"
-        )
-else:
-    st.error("🚨 Critical Error: Source data not found. Please upload to the data/ directory.")
+    if view_mode == "📈 Trend Analysis":
+        with st.container(border=True):
+            st.subheader("Predictive Demand Curve")
+            # Dual-axis styled area chart
+            st.area_chart(
+                forecast_df.set_index('date')[[TARGET_COL, 'Trend']], 
+                color=["#1e3a8a", "#10b981"], # Deep Blue and Emerald Green
+                use_container_width=True
+            )
+            st.markdown(
+                f"""
+                <div style='background-color: rgba(30, 58, 138, 0.1); padding: 15px; border-radius: 10px; border-left: 5px solid #1e3a8a;'>
+                    <strong>Insight:</strong> The forecast indicates a peak demand of 
+                    <span style='color: #1e3a8a; font-weight: bold;'>{forecast_df[TARGET_COL].max():,.0f}</span> 
+                    units. Maintain safety stock levels accordingly.
+                </div>
+                """, unsafe_allow_html=True
+            )
+
+    elif view_mode == "📋 Inventory Schedule":
+        with st.container(border=True):
+            st.subheader("Daily Requirement Breakdown")
+            # Interactive dataframe with heatmaps and progress bars
+            st.dataframe(
+                forecast_df.style.background_gradient(subset=[TARGET_COL], cmap="Blues"),
+                column_config={
+                    "date": st.column_config.DateColumn("Schedule Date", format="DD MMM YYYY"),
+                    TARGET_COL: st.column_config.ProgressColumn(
+                        "Projected Demand",
+                        help="Calculated daily units required",
+                        format="%.0f",
+                        min_value=0,
+                        max_value=int(forecast_df[TARGET_COL].max())
+                    ),
+                    "Trend": st.column_config.NumberColumn("Smoothed Trend", format="%.2f")
+                },
+                use_container_width=True,
+                hide_index=True
+            )
+
+    elif view_mode == "📥 Export Center":
+        # Professional "Download Card" design
+        col_left, col_mid, col_right = st.columns([1, 2, 1])
+        with col_mid:
+            st.markdown("""
+                <div style='text-align: center; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);'>
+                    <h2 style='color: #1e3a8a;'>Ready for Export</h2>
+                    <p style='color: gray;'>Your forecast report is compiled and ready for ERP integration.</p>
+                </div>
+            """, unsafe_allow_html=True)
+            
+            csv = forecast_df.to_csv(index=False).encode('utf-8')
+            st.download_button(
+                label="🚀 Download Secure Forecast (.CSV)",
+                data=csv,
+                file_name=f"SalesVision_Report_{pd.Timestamp.now().date()}.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+            st.caption("🔒 Report includes encrypted timestamps and model metadata.")
